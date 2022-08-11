@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -57,22 +57,22 @@ const NavList = styled.div`
 `
 
 const NavBar = () => {
-  //   useEffect(() => {
-  window.addEventListener('scroll', (e) => {
-    const nav = document.querySelector('#nav-bar')
-    const navBody = document.querySelector('#no-border')
-    const navBody2 = document.querySelector('#no-border-nav')
-    if (window.scrollY > 0) {
-      nav.classList.add('add-shadow')
-      navBody.classList.add('no-border')
-      navBody2.classList.add('no-border')
-    } else {
-      nav.classList.remove('add-shadow')
-      navBody.classList.remove('no-border')
-      navBody2.classList.remove('no-border')
-    }
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      const nav = document.querySelector('#nav-bar')
+      const navBody = document.querySelector('#no-border')
+      const navBody2 = document.querySelector('#no-border-nav')
+      if (window.scrollY > 0) {
+        nav.classList.add('add-shadow')
+        navBody.classList.add('no-border')
+        navBody2.classList.add('no-border')
+      } else {
+        nav.classList.remove('add-shadow')
+        navBody.classList.remove('no-border')
+        navBody2.classList.remove('no-border')
+      }
+    })
   })
-  //   })
 
   return (
     <Container id="nav-bar">
