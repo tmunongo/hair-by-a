@@ -69,7 +69,7 @@ const NavBar = () => {
     } else {
       nav.classList.remove('add-shadow')
       navBody.classList.remove('no-border')
-      navBody2.classList.add('no-border')
+      navBody2.classList.remove('no-border')
     }
   })
   //   })

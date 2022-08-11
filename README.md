@@ -1,6 +1,12 @@
 ## Intro
 
-## Credits
+A website for a hair seller
+
+## Live
+
+[Link](https://hairbya.gtsb.io/)
+
+## Credits for images used
 
 Hero Banner: Photo by <a href="https://unsplash.com/@szvmanski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">pawel szvmanski</a> on <a href="https://unsplash.com/s/photos/wig?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 <br/>
