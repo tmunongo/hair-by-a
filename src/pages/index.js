@@ -2,7 +2,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import styled from 'styled-components'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
+import Socials from '../components/Socials'
 import '../styles/index.css'
 
 const HeroText = styled.h1`
@@ -29,6 +31,9 @@ const HeroSubText = styled.h3`
 const Image = styled.div`
   height: auto;
   width: 40%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Info = styled.div`
@@ -37,6 +42,27 @@ const Info = styled.div`
   justify-content: center;
   padding: 8px 24px;
   width: 50%;
+`
+
+const LogoIcon = styled.div`
+  align-items: center;
+  background-color: teal;
+  display: flex;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 600;
+  height: 72px;
+  justify-content: center;
+  width: 72px;
+`
+
+const Logos = styled.div`
+  align-items: center;
+  display: flex;
+  height: 120px;
+  justify-content: space-evenly;
+  padding: 16px;
+  width: 80vw;
 `
 
 const Main = styled.div`
@@ -74,6 +100,7 @@ const SmallText = styled.span`
 const Sponsors = styled.div`
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 `
 
@@ -95,6 +122,7 @@ const IndexPage = () => {
           <Button text="Learn More" />
         </div>
       </Hero>
+      <Socials />
       <Section2>
         <SubSection1>
           <Info style={{ textAlign: 'left' }}>
@@ -153,7 +181,22 @@ const IndexPage = () => {
           </Image>
         </SubSection1>
       </Section2>
-      <Sponsors></Sponsors>
+      <Sponsors>
+        <h2>Our Partners</h2>
+        <p>
+          We have been working with a lot of brands and you need to know about
+          it!
+        </p>
+        <Logos>
+          <LogoIcon>G</LogoIcon>
+          <LogoIcon>LV</LogoIcon>
+          <LogoIcon>C</LogoIcon>
+          <LogoIcon>D</LogoIcon>
+          <LogoIcon>P</LogoIcon>
+          <LogoIcon>H</LogoIcon>
+        </Logos>
+      </Sponsors>
+      <Footer />
     </Main>
   )
 }

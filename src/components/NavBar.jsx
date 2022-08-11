@@ -57,12 +57,29 @@ const NavList = styled.div`
 `
 
 const NavBar = () => {
+  //   useEffect(() => {
+  window.addEventListener('scroll', (e) => {
+    const nav = document.querySelector('#nav-bar')
+    const navBody = document.querySelector('#no-border')
+    const navBody2 = document.querySelector('#no-border-nav')
+    if (window.scrollY > 0) {
+      nav.classList.add('add-shadow')
+      navBody.classList.add('no-border')
+      navBody2.classList.add('no-border')
+    } else {
+      nav.classList.remove('add-shadow')
+      navBody.classList.remove('no-border')
+      navBody2.classList.add('no-border')
+    }
+  })
+  //   })
+
   return (
-    <Container>
-      <Logo>
+    <Container id="nav-bar">
+      <Logo id="no-border">
         <p>Hair By A</p>
       </Logo>
-      <Navigation>
+      <Navigation id="no-border-nav">
         <NavList>
           <ListItem>Home</ListItem>
           <ListItem>About Us</ListItem>
