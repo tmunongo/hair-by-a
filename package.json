@@ -14,6 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/comfortaa": "^4.5.9",
+    "@fontsource/nova-script": "^4.5.7",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",

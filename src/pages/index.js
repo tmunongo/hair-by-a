@@ -19,7 +19,6 @@ const Hero = styled.div`
   display: flex;
   justify-content: start;
   min-height: 600px;
-  padding: 8px;
   width: 100vw;
 `
 
@@ -31,7 +30,7 @@ const HeroSubText = styled.h3`
 const Image = styled.div`
   height: auto;
   width: 40%;
-  @media (max-width: 768px) {
+  @media (max-width: 980px) {
     display: none;
   }
 `
@@ -42,6 +41,9 @@ const Info = styled.div`
   justify-content: center;
   padding: 8px 24px;
   width: 50%;
+  @media (max-width: 980px) {
+    width: 100%;
+  }
 `
 
 const LogoIcon = styled.div`
@@ -84,11 +86,13 @@ const Section2 = styled.div`
 
 const SubSection1 = styled.div`
   background: whitesmoke;
-
   border-radius: 0.375rem;
   display: flex;
   margin-top: 10px;
   padding: 8px;
+  @media (max-width: 980px) {
+    border: 0.5px solid #d5f2ef;
+  }
 `
 
 const SubSection2 = styled.div``

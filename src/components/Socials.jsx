@@ -7,10 +7,10 @@ const Container = styled.div`
   bottom: 20px;
   display: flex;
   flex-direction: column;
-  left: 40px;
+  left: 20px;
   margin-left: 20px;
   position: fixed;
-  @media (max-width: 768px) {
+  @media (max-width: 980px) {
     display: none;
   }
 `

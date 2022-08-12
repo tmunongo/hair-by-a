@@ -1,10 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import styled from 'styled-components'
+
+const BurgerIcon = styled.div`
+  cursor: grab;
+  display: none;
+  padding-top: 15px;
+  @media (max-width: 980px) {
+    display: flex;
+    padding: 15px 20px;
+  }
+`
 
 const Container = styled.div`
   display: flex;
   position: absolute;
   top: 10px;
+  @media (max-width: 980px) {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
 `
 
 const ListItem = styled.li`
@@ -27,12 +44,15 @@ const Logo = styled.div`
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   display: flex;
-  font-family: cursive;
+  font-family: 'Nova Script', cursive;
   font-size: 20px;
   height: 64px;
   justify-content: center;
   opacity: 0.8;
   width: 20vw;
+  @media (max-width: 980px) {
+    border: none;
+  }
 `
 
 const Navigation = styled.div`
@@ -42,11 +62,15 @@ const Navigation = styled.div`
   border-top: 2px solid #d5f2ef;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  font-family: cursive;
+  font-family: 'Nova Script', cursive;
   font-size: 20px;
   height: 64px;
   opacity: 0.8;
   width: 60vw;
+  @media (max-width: 980px) {
+    border: none;
+    display: none;
+  }
 `
 
 const NavList = styled.div`
@@ -57,6 +81,7 @@ const NavList = styled.div`
 `
 
 const NavBar = () => {
+  const [menu, setMenu] = useState(false)
   useEffect(() => {
     window.addEventListener('scroll', (e) => {
       const nav = document.querySelector('#nav-bar')
@@ -79,6 +104,13 @@ const NavBar = () => {
       <Logo id="no-border">
         <p>Hair By A</p>
       </Logo>
+      <BurgerIcon>
+        {!menu ? (
+          <AiOutlineMenu size={30} onClick={() => setMenu(true)} />
+        ) : (
+          <AiOutlineClose size={30} onClick={() => setMenu(false)} />
+        )}
+      </BurgerIcon>
       <Navigation id="no-border-nav">
         <NavList>
           <ListItem>Home</ListItem>
