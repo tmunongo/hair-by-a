@@ -100,7 +100,10 @@ const Footer = () => {
         </Disclaimer>
         <Credit>
           Built and Designed by
-          <a href="https://tawandamunongo.tech"> Tawanda Munongo</a>
+          <a href="https://tawandamunongo.tech" style={{ color: '#eddfd4' }}>
+            {' '}
+            Tawanda Munongo
+          </a>
         </Credit>
       </Copyright>
     </Container>

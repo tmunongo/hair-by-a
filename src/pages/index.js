@@ -56,6 +56,10 @@ const LogoIcon = styled.div`
   height: 72px;
   justify-content: center;
   width: 72px;
+  @media (max-width: 768px) {
+    height: 48px;
+    width: 40px;
+  }
 `
 
 const Logos = styled.div`
@@ -129,7 +133,7 @@ const IndexPage = () => {
       <Socials />
       <Section2>
         <SubSection1>
-          <Info style={{ textAlign: 'left' }}>
+          <Info style={{ textAlign: 'left' }} className="info">
             <h2>World Class Staff</h2>
             <h4>
               Our committed staff will ensure that you walk out looking like the
@@ -152,7 +156,7 @@ const IndexPage = () => {
               alt="hair mood"
             />
           </Image>
-          <Info style={{ textAlign: 'right' }}>
+          <Info style={{ textAlign: 'right' }} className="info">
             <h2>Solutions</h2>
             <Quote>
               “So you don’t want to change the color and you don’t want to go
@@ -164,7 +168,7 @@ const IndexPage = () => {
           </Info>
         </SubSection1>
         <SubSection1>
-          <Info style={{ textAlign: 'left' }}>
+          <Info style={{ textAlign: 'left' }} className="info">
             <h2>Variety is the Spice of Life</h2>
             <h4>
               We've got something to match every occassion, from Sunday lunch to
@@ -187,7 +191,7 @@ const IndexPage = () => {
       </Section2>
       <Sponsors>
         <h2>Our Partners</h2>
-        <p>
+        <p className="sponsors">
           We have been working with a lot of brands and you need to know about
           it!
         </p>

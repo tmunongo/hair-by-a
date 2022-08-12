@@ -1,7 +1,3 @@
-a {
-  color: #eddfd4;
-}
-
 body {
   font-family: 'Comfortaa', cursive;
   margin: 0;
@@ -22,7 +18,15 @@ body {
   z-index: 100;
 }
 
+.info {
+  text-align: center;
+}
+
 .nav-bar {
+}
+
+.logo {
+  color: black;
 }
 
 .no-border {
@@ -44,6 +48,10 @@ label {
 @media screen and (max-width: 980px) {
   .add-shadow {
     justify-content: space-between;
+  }
+  .sponsors {
+    margin-left: 5px;
+    text-align: center;
   }
 }
 
