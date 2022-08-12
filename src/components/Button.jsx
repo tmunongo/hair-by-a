@@ -14,7 +14,7 @@ const Container = styled.div`
   height: 48px;
   margin-left: 10vw;
   margin-top: 50px;
-  width: 20vw;
+  width: 120px;
   :hover {
     background: #d5f2ef;
     cursor: grab;

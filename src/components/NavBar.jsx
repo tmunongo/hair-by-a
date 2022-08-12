@@ -45,11 +45,11 @@ const Logo = styled.div`
   border-bottom-left-radius: 2rem;
   display: flex;
   font-family: 'Nova Script', cursive;
-  font-size: 20px;
+  font-size: 24px;
   height: 64px;
   justify-content: center;
   opacity: 0.8;
-  width: 20vw;
+  width: 130px;
   @media (max-width: 980px) {
     border: none;
   }
