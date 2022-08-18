@@ -14,6 +14,7 @@ const BurgerIcon = styled.div`
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-around;
   position: absolute;
   top: 10px;
   @media (max-width: 980px) {
