@@ -24,6 +24,18 @@ const Container = styled.div`
   }
 `
 
+const DropList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`
+
+const DropListItem = styled.li`
+  font-size: 20px;
+  line-height: 60px;
+  list-style: none;
+`
+
 const ListItem = styled.li`
   list-style: none;
   :hover {
@@ -38,11 +50,11 @@ const ListItem = styled.li`
 const Logo = styled.div`
   align-items: center;
   //   background-color: #d5f2ef;
-  border-bottom: 2px solid #d5f2ef;
-  border-left: 2px solid #d5f2ef;
-  border-top: 2px solid #d5f2ef;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  // border-bottom: 2px solid #d5f2ef;
+  // border-left: 2px solid #d5f2ef;
+  // border-top: 2px solid #d5f2ef;
+  // border-top-left-radius: 2rem;
+  // border-bottom-left-radius: 2rem;
   display: flex;
   font-family: 'Nova Script', cursive;
   font-size: 24px;
@@ -55,18 +67,49 @@ const Logo = styled.div`
   }
 `
 
+const MenuHidden = styled.div`
+  background: #cbe0da;
+  height: calc(100vh - 60px);
+  left: -100vw;
+  position: absolute;
+  top: 0px;
+  transition: all 0.5ms;
+  width: 100vw;
+  @media (min-width: 980px) {
+    display: none;
+  }
+`
+
+const MenuVisible = styled.div`
+  align-items: center;
+  background-color: #cbe0da;
+  display: flex;
+  height: calc(100vh - 60px);
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  top: 60px;
+  transition: all 0.5ms;
+  width: 100vw;
+  z-index: 999;
+  @media (min-width: 980px) {
+    display: none;
+  }
+`
+
 const Navigation = styled.div`
   //   background-color: #cef5f0;
-  border-bottom: 2px solid #d5f2ef;
-  border-right: 2px solid #d5f2ef;
-  border-top: 2px solid #d5f2ef;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  // border-bottom: 2px solid #d5f2ef;
+  // border-right: 2px solid #d5f2ef;
+  // border-top: 2px solid #d5f2ef;
+  // border-top-right-radius: 2rem;
+  // border-bottom-right-radius: 2rem;
   font-family: 'Nova Script', cursive;
   font-size: 20px;
   height: 64px;
   opacity: 0.8;
   width: 60vw;
+  z-index: 1000;
   @media (max-width: 980px) {
     border: none;
     display: none;
@@ -118,6 +161,18 @@ const NavBar = () => {
           <ListItem>Shop</ListItem>
         </NavList>
       </Navigation>
+      {menu ? (
+        <MenuVisible>
+          <DropList>
+            <DropListItem>Home</DropListItem>
+            <DropListItem>About Us</DropListItem>
+            <DropListItem>Contact Us</DropListItem>
+            <DropListItem>Shop</DropListItem>
+          </DropList>
+        </MenuVisible>
+      ) : (
+        <MenuHidden></MenuHidden>
+      )}
     </Container>
   )
 }
