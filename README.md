@@ -4,7 +4,7 @@ A website for a hair seller
 
 ## Preview
 
-[Live]('./src/images/hairbya-sc.png')
+!['Live'](./src/images/hairbya-sc.png)
 
 ## Live
 
