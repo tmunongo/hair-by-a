@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React, { useEffect, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import styled from 'styled-components'
@@ -157,8 +158,13 @@ const NavBar = () => {
       </BurgerIcon>
       <Navigation id="no-border-nav">
         <NavList>
-          <ListItem>Home</ListItem>
+          <ListItem>
+            <Link to="/">Home</Link>
+          </ListItem>
           <ListItem>About Us</ListItem>
+          <ListItem>
+            <Link to="/blog">Blog</Link>
+          </ListItem>
           <ListItem>Shop</ListItem>
         </NavList>
       </Navigation>

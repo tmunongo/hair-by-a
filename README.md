@@ -19,3 +19,5 @@ Hero Banner: Photo by <a href="https://unsplash.com/@szvmanski?utm_source=unspla
 \*\* image: Photo by <a href="https://unsplash.com/@vonshnauzer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Egor Myznik</a> on <a href="https://unsplash.com/s/photos/wig?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 on shelf: Creator: JackF | Credit: Getty Images/iStockphoto
 Copyright: JackF
+
+Hair Dresser Image Blog Post 1: Photo by <a href="https://unsplash.com/@awcreativeut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam Winger</a> on <a href="https://unsplash.com/s/photos/hairdresser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
